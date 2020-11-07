@@ -23,8 +23,8 @@ async function rwcLookup(url) {
 
     await page.waitForNavigation();
 
-    await page.type('#userNameInput', 'pa912712');
-    await page.type('#passwordInput', 'FPCKnights328!');
+    await page.type('#userNameInput', username);
+    await page.type('#passwordInput', password);
     await page.keyboard.press('Enter')
     console.log("User logged in successfully.")
 
